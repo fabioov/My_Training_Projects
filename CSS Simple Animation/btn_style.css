@@ -1,0 +1,64 @@
+
+ul {
+    background-color:darkgray;
+    border-radius: 15px;
+    width: 500px;
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+}
+
+
+ul li {
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 0;
+    margin: 10px 0;
+    transition: all 0.5s ease-in;
+    background: white;
+    align-items: stretch;
+}
+
+
+.btn-red {
+    border: 2px solid #F0514E;
+    color: #F0514E;
+}
+
+.btn-red:hover {
+    box-shadow: #F0514E 100px 0 0 2px inset;
+}
+
+.btn-green {
+    border: 2px solid green;
+    color: green;
+}
+
+.btn-green:hover {
+    box-shadow: green 200px 0 0 2px inset;
+}
+
+.btn-yellow {
+    border: 2px solid yellow;
+    color: yellow;
+}
+
+.btn-yellow:hover {
+    box-shadow: yellow 350px 0 0 2px inset;
+}
+
+.btn-pink {
+    border: 2px solid pink;
+    color: pink;
+}
+
+.btn-pink:hover {
+    box-shadow: pink 470px 0 0 2px inset;
+}
+
+
