@@ -1,0 +1,40 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/Quadra-Aberta-Marau.JPG");
+    background-size: 100% 100%;
+}
+
+.home h1 {
+    position: relative;
+    font-weight: 500;
+    color: white;
+    font-size: 37px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.button {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    align-self: center;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #46A0FA;
+    color: white;
+}
+
+.button:hover {
+    border: 1.2px solid white;
+    background-color: #46A0FA;
+    transition: 0.6s;
+    font-weight: bold;
+}
