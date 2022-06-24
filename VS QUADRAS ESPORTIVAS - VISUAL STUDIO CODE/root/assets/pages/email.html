@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/pop-up-windows.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Raleway:wght@100&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Raleway:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "fabioov@gmail.com",
+            Password: "11v3l103",
+            To: 'fabioov@hotmail.com',
+            From: document.getElementById("email").value,
+            Subject: "Sending Email using javascript",
+            Body: "Nome: " + document.getElementById("nome").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value 
+          }).then(
+            message =>
+              alert("E-mail enviado com sucesso!")
+            );
+        }
+      </script>
+
+</head>
+<body>
+    <div class="box">
+        <a href="#divOne" class="button">Contact us</a>
+    </div>
+        <!--Contato Pop-up-->
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <h2>Preencha o formulário</h2>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="container">
+                    <form onsubmit="sendEmail(); reset(); return false">
+                        
+                        <input type="text" id="nome" placeholder="Nome">
+                        
+                        <input type="text" id="sobrenome" placeholder="Sobrenome">
+
+                        <input type="text" id="email" placeholder="E-mail">
+                        
+                        <textarea id="message" placeholder="Digite sua pergunta aqui..."></textarea>
+                        <button type="submit">Enviar</button>
+                        
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

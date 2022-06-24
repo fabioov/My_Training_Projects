@@ -1,0 +1,74 @@
+.numeros {
+    width: 100vw;
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #46A0FA;
+    padding: 0 5px;
+}
+
+#desde, #entregue, #pavilhao, #poli, #andamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#andamento::before {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    margin-left: -260px;
+   
+}
+
+#poli::before {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    margin-left: -335px;
+   
+}
+
+#pavilhao::before {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    margin-left: -310px;
+   
+}
+
+#entregue::before {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    margin-left: -300px;
+   
+}
+
+#obras {
+    font-size: 10px;;
+}
+.numeros p {
+    font-size: 20px;
+    margin-bottom: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #fff;;
+}
+
+.numeros h1 {
+    font: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}

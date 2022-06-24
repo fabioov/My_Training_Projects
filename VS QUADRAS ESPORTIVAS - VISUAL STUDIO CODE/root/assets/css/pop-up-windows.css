@@ -1,0 +1,149 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #46A0FA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+}
+
+.button {
+    font-size: 1em;
+    padding: 15px 35px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background: #403e3d;
+    border-radius: 50px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 1.0);
+    visibility: hidden;
+    transition: opacity 500ms;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper {
+    margin: 70px auto;
+    padding: 20px;
+    background: #46A0FA;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    transition: all 2.5s ease-in-out;
+}
+.wrapper h2 {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+
+    
+}
+
+.wrapper .content {
+    max-height: 50%;
+    overflow: auto;
+}
+
+
+/*form design*/
+
+.container {
+    border-radius: 5px;
+    background-color: #46A0FA;
+    padding: 30px;
+
+
+}
+
+
+form label {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#message {
+    width: 99%;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    margin-top: 8px;
+    background-color: #46A0FA;
+    border: 1px solid #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 14px;
+    background-color: #46A0FA;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+button{
+    background-color: #46A0FA;
+    color: #fff;
+    padding: 15px 50px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 200px;
+    align-self: center;
+    margin-left: 210px;
+    margin-top: 20px;
+    
+
+}
+
+
+button:hover{
+    background-color: #fff;
+    color:#46A0FA;
+    transition: 0.5s;
+    text-decoration: underline;
+
+}
+
