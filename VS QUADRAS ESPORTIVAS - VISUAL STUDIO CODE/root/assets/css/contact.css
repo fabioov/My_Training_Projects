@@ -12,14 +12,14 @@
    background: #03407c;
     padding: 0 20px;
     margin: 0 10px;
-    width: calc(33%-20px);
+    width: 400px;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     color: #46A0FA;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 .card-icon-square {

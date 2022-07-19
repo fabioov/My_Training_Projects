@@ -1,6 +1,6 @@
 .sobre {
     display: flex;
-    height: 633px;
+    height: 850px;
     width: 100vw;
     justify-content: space-around;
     align-items: center;
@@ -47,4 +47,60 @@
     height: 5px;
     margin-top: 10px;
     width: 80%;
+}
+
+
+@media screen and (max-width:800px){
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background-color: #46A0FA;
+        opacity: 1;
+        background-size: 100% 100%;
+
+    }
+    .sobre img {
+        visibility: hidden;
+
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 60vw;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: -500px;
+        color: white;
+        font-family: "montserrat", sans-serif;
+    }
+    
+    .text h1 {
+        font-size: 30px;
+        color: #85F4FF;
+        align-self: center;
+    }
+    
+    .text p {
+        margin-top: 10px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    #about::after {
+        content: "";
+        display: flex;
+        background: white;
+        height: 3px;
+        margin-top: 10px;
+        width: 200%;
+        margin-left: -40px;
+    }
+    
+    
 }

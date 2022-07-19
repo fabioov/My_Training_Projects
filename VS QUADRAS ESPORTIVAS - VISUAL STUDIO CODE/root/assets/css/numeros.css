@@ -72,3 +72,85 @@
     font-family: "Roboto", sans-serif;
     color: #fff;
 }
+
+
+@media screen and (max-width:800px){
+
+    .numeros {
+        width: 95vw;
+        height: 125px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #46A0FA;
+        padding: 0 5px;
+    }
+    
+    #desde, #entregue, #pavilhao, #poli, #andamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    #andamento::before {
+        content: "";
+        background-color: #fff;
+        width: 2px;
+        height: 60px;
+        position: absolute;
+        margin-left: -100px;
+       
+    }
+    
+    #poli::before {
+        content: "";
+        background-color: #fff;
+        width: 2px;
+        height: 60px;
+        position: absolute;
+        margin-left: -125px;
+       
+    }
+    
+    #pavilhao::before {
+        content: "";
+        background-color: #fff;
+        width: 2px;
+        height: 60px;
+        position: absolute;
+        margin-left: -110px;
+       
+    }
+    
+    #entregue::before {
+        content: "";
+        background-color: #fff;
+        width: 2px;
+        height: 60px;
+        position: absolute;
+        margin-left: -95px;
+       
+    }
+    
+    #obras {
+        font-size: 8px;
+        text-align: center;
+    }
+    .numeros p {
+        font-size: 12px;
+        margin-bottom: 4px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+
+    }
+    
+    .numeros h1 {
+        font: 6px;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+    }
+}
